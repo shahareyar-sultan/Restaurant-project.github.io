@@ -1,0 +1,397 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+
+
+
+
+    /* font-family: 'Fira Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif; */
+}
+
+.row{
+    width: 100%;
+    padding: 15px;
+    display: block;
+}
+
+.row::after{
+        content: "";
+        clear: both;
+        display: block;
+    }
+
+/* .row::before{
+    content: '';
+    clear: both;
+    display: table;
+} */
+    
+
+
+
+/* header starts here  */
+
+header{
+    background-color: #1b9995;
+    padding: 0% 2%;
+    text-align: center;
+}
+
+.logo{
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    color: white;
+    background-color: lightcoral;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 2%;
+    transition: .4s;
+}
+.logo:hover{
+    transform: scale(1.1);
+    background-color: white;
+    color: black;
+    border: 2px solod black ;
+}
+.logo-div{
+    text-align: center;
+    background-color: #119b96;
+    border-radius: 10px;
+    padding: 2%;
+}
+
+nav ul li{
+    display: block;
+}
+nav ul li a{
+    display: block;
+    list-style-type: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 70px;
+    padding: 0px 20px;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif; 
+    transition: .4s;
+}
+
+nav ul li a:hover{
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+
+
+
+/* header ends here  */
+
+/* main starts here  */
+/* banner section starts here  */
+#banner-section{
+    background-image: url("images/banner.jpg");
+    background-position: center;
+    background-attachment: ;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.banner-contents{
+    padding: 50px 10px;
+    text-align: center;
+
+}
+
+.banner-contents h1{
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    background: rgba(51, 104, 18, 0.5);
+    padding: 10px 30px;
+    text-transform: capitalize;
+    border-radius: 10px;
+    font-size: 2rem;
+    color: rgb(251, 248, 248);
+}
+
+.banner-contents p{
+    background: rgba(227, 118, 81, 0.5);
+    margin: 15px auto;
+    width: 60%;
+    padding: 10px;
+    color: white;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    border-radius: 10px;
+}
+
+
+.btn{
+    width: 200px;
+    background: rgb(251, 248, 248);
+    border: none;
+    padding: 10px 20px;
+    color: rgb(77, 4, 97);
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    border-radius: 10px;
+    transition: .4s;
+}
+
+.btn:hover{
+    transform: scale(1.2);
+    color: #080c0c;
+}
+/* banner section starts here  */
+
+/* about us section starts here  */
+#about-us{
+    padding: 15px;
+    background-color: rgb(225, 241, 244);
+    padding: 3% 1%;
+}
+
+.about-us-contents{
+    text-align: center;
+   
+
+}
+.about-us-contents h3{
+    padding: 5px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-family: 'Fira Sans', sans-serif;
+    text-decoration: underline;
+    color: rgb(13, 74, 13);
+
+}
+.about-us-contents p{
+    padding: 5px;
+    text-align: justify;
+    color: black;
+    font-weight: 0px;
+    font-family: 'Montserrat', sans-serif;
+   
+
+}
+
+/* about us section ends here  */
+
+
+/* food menu section starts here  */
+#menu-section{
+    padding: 1%;
+    background-color: rgb(172, 251, 172);
+}
+.card-body{
+    text-align: center;
+
+}
+.card-body img{
+    width: 100%;
+    height: auto;
+    display: block;    
+}
+.item-desc{
+    background: rgb(177, 157, 157);
+
+}
+
+.item-name {
+    background: green;
+    padding: 10px;
+    text-transform: uppercase;
+    color: aqua;
+}
+.item-desc > p {
+    padding: 10px;
+    background-color: rgb(218, 128, 10);
+    color: white;
+    font-weight: bold;
+}
+.card{
+    margin: 1px 5px;
+    transition: .3s;
+}
+.card:hover{
+transform: scale(1.05);
+
+} 
+/* food menu section ends here  */
+
+/* contact section starts here  */
+
+#contact{
+    background-color: rgb(4, 75, 4);
+    padding: 1%;
+}
+.map{
+    text-align: center;
+    padding: 2% 0%;
+}
+.road map{
+    width: 100%;
+    height: auto;
+}
+
+.contact-details{
+   
+    text-align: center;
+    margin-top: 50px;
+   
+}
+.contact-details h4, p,address{
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.contact-details{
+
+}
+/* contact section ends  here  */
+
+/* main ends here  */
+
+/* Footer section starts here  */
+footer{
+    background-color: #080c0c;
+    padding: 1%;
+    color: white;
+}
+
+footer p{
+    line-height: 32px;
+    font-size: .8rem;
+    text-align:center;
+}
+.social-menus{
+    text-align: center;
+}
+.icon-style{
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    border: 1px solid rgb(232, 73, 73);
+    border-radius: 50%;
+    padding: 1%;
+    margin:0 10px;
+    background-color: lightgreen;
+    color: black;
+    text-align: center;
+    transition: .3s;
+    
+}
+.icon-style:hover{
+    transform: scale(1.2);
+    background-color: rgb(135, 147, 135);
+    color: aqua;
+}
+/* 
+
+
+/* Footer section starts here  */
+
+
+[class*="col-"] {
+    float: left;
+    padding: ;
+    }
+    
+    
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+    
+    @media (min-width: 576px) {
+      /* For small device: */
+      .col-s-1 {width: 8.33%;}
+      .col-s-2 {width: 16.66%;}
+      .col-s-3 {width: 25%;}
+      .col-s-4 {width: 33.33%;}
+      .col-s-5 {width: 41.66%;}
+      .col-s-6 {width: 50%;}
+      .col-s-7 {width: 58.33%;}
+      .col-s-8 {width: 66.66%;}
+      .col-s-9 {width: 75%;}
+      .col-s-10 {width: 83.33%;}
+      .col-s-11 {width: 91.66%;}
+      .col-s-12 {width: 100%;}
+    }
+    
+    @media (min-width: 768px) {
+      /* For medium device: */
+      .col-m-1 {width: 8.33%;}
+      .col-m-2 {width: 16.66%;}
+      .col-m-3 {width: 25%;}
+      .col-m-4 {width: 33.33%;}
+      .col-m-5 {width: 41.66%;}
+      .col-m-6 {width: 50%;}
+      .col-m-7 {width: 58.33%;}
+      .col-m-8 {width: 66.66%;}
+      .col-m-9 {width: 75%;}
+      .col-m-10 {width: 83.33%;}
+      .col-m-11 {width: 91.66%;}
+      .col-m-12 {width: 100%;}
+    }
+
+
+    @media (min-width: 992px) {
+
+        /* For desktop: */
+
+        .logo-div{
+            text-align: left;
+            border-radius: 10px;
+            padding: 2%;
+        }
+       
+        nav ul{
+            text-align: right;
+        }
+        nav ul li{
+            display: inline-block;
+        }
+        nav ul li a {
+            display: inline-block;
+            transition: .4s;
+        }
+        nav ul li a:hover{
+            background-color: transparent;
+            transform: scale(1.2);
+            color: aqua;
+            font-weight: bolder;
+            text-decoration: underline;
+        }
+
+        .col-l-1 {width: 8.33%;}
+        .col-l-2 {width: 16.66%;}
+        .col-l-3 {width: 25%;}
+        .col-l-4 {width: 33.33%;}
+        .col-l-5 {width: 41.66%;}
+        .col-l-6 {width: 50%;}
+        .col-l-7 {width: 58.33%;}
+        .col-l-8 {width: 66.66%;}
+        .col-l-9 {width: 75%;}
+        .col-l-10 {width: 83.33%;}
+        .col-l-11 {width: 91.66%;}
+        .col-l-12 {width: 100%;}
+      }
